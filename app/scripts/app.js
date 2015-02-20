@@ -1,5 +1,5 @@
 'use strict';
 
-var festivalhackapp = angular.module('festivalHack', [
+var festivalhackapp = angular.module('festivalhack', [
 
 ]);
