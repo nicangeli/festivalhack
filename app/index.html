@@ -31,7 +31,9 @@
 <body>
     <div ng-controller="MainController">
         <button ng-click="fetchFromVine()">Go go go</button>
-        {{model.contents}}
+        <ul>
+            <li ng-repeat="vine in vines"><img ng-src="{{vine.thumbnailUrl}}"></li>
+        </ul>
     </div>
 </body>
 </html>
