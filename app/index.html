@@ -31,9 +31,10 @@
 </head>
 <body>
     <div ng-controller="MainController">
-        <button ng-click="fetchFromVine()">Go go go</button>
         <ul>
-            <li ng-repeat="vine in vines"><img ng-src="{{$sce.trustAsResourceUrl(vine.thumbnailUrl)}}"></li>
+            <li ng-repeat="vine in vines">
+                <video autoplay loop ng-src="{{vine}}"></video>
+            </li>
         </ul>
     </div>
 </body>
