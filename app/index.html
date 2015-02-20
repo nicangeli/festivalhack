@@ -16,6 +16,7 @@
 
     <!--Bower-->
     <!--<script src="/scripts/bower_components/"></script>-->
+    <script src="/scripts/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <!--Bower End-->
 
     <script src="/scripts/app.js"></script>
@@ -32,7 +33,7 @@
     <div ng-controller="MainController">
         <button ng-click="fetchFromVine()">Go go go</button>
         <ul>
-            <li ng-repeat="vine in vines"><img ng-src="{{vine.thumbnailUrl}}"></li>
+            <li ng-repeat="vine in vines"><img ng-src="{{$sce.trustAsResourceUrl(vine.thumbnailUrl)}}"></li>
         </ul>
     </div>
 </body>

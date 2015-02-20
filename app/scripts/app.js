@@ -1,8 +1,10 @@
 'use strict';
 
-var app = angular.module('festivalhack', []);
+var app = angular.module('festivalhack', [
+	'ngSanitize'
+]);
 
-app.controller('MainController', function($scope, $http) {
+app.controller('MainController', function($scope, $http, $sce) {
 	var vine_url = "proxy.php?tag=festivalhack";
 	$scope.model = {
 		contents: vine_url
