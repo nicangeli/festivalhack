@@ -1,5 +1,9 @@
 'use strict';
 
-var festivalhackapp = angular.module('festivalHack', [
+var app = angular.module('festivalhack', []);
 
-]);
+app.controller('MainController', function($scope) {
+	$scope.model = {
+		contents: 'Hello Michael And Nick'
+	}
+});
