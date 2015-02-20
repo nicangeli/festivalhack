@@ -10,6 +10,7 @@ app.controller('MainController', function($scope, $http) {
 	$scope.vines = {};
 
 	$scope.fetchFromVine = function() {
+
 		console.log('yuouo');
 		$http.get(vine_url)
 			.success(function(data) {
