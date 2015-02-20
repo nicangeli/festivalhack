@@ -8,7 +8,7 @@ body{
     background: #000;
 }
 
-.container {
+/*.container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -22,5 +22,5 @@ body{
 
 .item video {
 	width: 100%;
-}
+}*/
 

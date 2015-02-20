@@ -1,8 +1,12 @@
 'use strict';
 
 var app = angular.module('festivalhack', [
-	'ngSanitize'
+	'ngSanitize',
+	'wu.masonry'
 ]);
+app.config(function($logProvider){
+  $logProvider.debugEnabled(true);
+});
 
 app.controller('MainController', function($scope, $http, $sce, $interval) {
 	var vine_url = "proxy.php?tag=festivalhack";

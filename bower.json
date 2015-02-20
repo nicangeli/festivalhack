@@ -1,11 +1,8 @@
 {
-  "name": "comic-cloud-client",
-  "directory": "app/scripts/bower_components",
+  "name": "festivalhack",
   "version": "0.0.0",
   "dependencies": {
-    "angular-route": "1.2.16",
-  },
-  "devDependencies": {
+    "angular-masonry": "~0.11.0"
   },
   "appPath": "app"
 }

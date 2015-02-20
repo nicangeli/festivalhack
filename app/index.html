@@ -15,14 +15,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <script src="/scripts/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <!--<script src="/scripts/bower_components/jquery/dist/jquery.js"></script>-->
+    <script src="/scripts/bower_components/jquery-bridget/jquery.bridget.js"></script>
+    <script src="/scripts/bower_components/get-style-property/get-style-property.js"></script>
+    <script src="/scripts/bower_components/get-size/get-size.js"></script>
+    <script src="/scripts/bower_components/eventEmitter/EventEmitter.js"></script>
+    <script src="/scripts/bower_components/eventie/eventie.js"></script>
+    <script src="/scripts/bower_components/doc-ready/doc-ready.js"></script>
+    <script src="/scripts/bower_components/matches-selector/matches-selector.js"></script>
+    <script src="/scripts/bower_components/outlayer/item.js"></script>
+    <script src="/scripts/bower_components/outlayer/outlayer.js"></script>
+    <script src="/scripts/bower_components/masonry/masonry.js"></script>
+    <script src="/scripts/bower_components/imagesloaded/imagesloaded.js"></script>
+    <script src="/scripts/bower_components/angular-masonry/angular-masonry.js"></script>
 
     <script src="/scripts/app.js"></script>
+
+    <!--JavaScript End-->
 
 </head>
 <body>
     <div ng-controller="MainController">
-        <ul class="container">
-            <li class="item" ng-repeat="vine in vines">
+        <ul class="container" masonry>
+            <li class="item masonry-brick" ng-repeat="vine in vines">
                 <video autoplay loop ng-src="{{vine}}"></video>
             </li>
         </ul>
