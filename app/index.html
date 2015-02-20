@@ -6,6 +6,7 @@
     <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
     <title></title>
     <!--Stylesheets-->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/style.css">
 
     <!--Stylesheets End-->
@@ -23,9 +24,12 @@
     <div ng-controller="MainController">
         <ul class="container">
             <li class="item" ng-repeat="vine in vines">
-                <video autoplay loop ng-src="{{vine}}"></video>
+                <video muted autoplay loop ng-src="{{vine}}"></video>
             </li>
         </ul>
+        <h1>
+            Tag your Vine with <span>#festivalhack</span> appear on the screen
+        </h1>
     </div>
 </body>
 </html>
