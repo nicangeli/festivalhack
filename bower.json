@@ -1,0 +1,11 @@
+{
+  "name": "comic-cloud-client",
+  "directory": "app/scripts/bower_components",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-route": "1.2.16",
+  },
+  "devDependencies": {
+  },
+  "appPath": "app"
+}
