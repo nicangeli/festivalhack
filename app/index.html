@@ -37,8 +37,8 @@
 </head>
 <body>
     <div ng-controller="MainController">
-        <ul class="container" masonry>
-            <li class="item masonry-brick" ng-repeat="vine in vines">
+        <ul class="container" masonry load-images="true">
+            <li class="item masonry-brick" ng-repeat="vine in vines ">
                 <video autoplay loop ng-src="{{vine}}"></video>
             </li>
         </ul>

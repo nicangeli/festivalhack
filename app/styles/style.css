@@ -6,6 +6,7 @@
 
 body{
     background: #000;
+    height: 100vh;
 }
 
 /*.container {
@@ -18,9 +19,16 @@ body{
 
 .item {
 	width: 20%;
-}
+}*/
 
 .item video {
 	width: 100%;
-}*/
+}
+
+.masonry-brick { 
+	width: 25%; 
+}
+
+
+
 
