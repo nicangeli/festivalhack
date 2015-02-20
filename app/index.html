@@ -12,19 +12,19 @@
     <!--Stylesheets End-->
 
     <!--JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <script src="/scripts/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-
+    
     <script src="/scripts/app.js"></script>
 
 </head>
 <body>
     <div ng-controller="MainController">
-        <ul class="container">
-            <li class="item" ng-repeat="vine in vines">
-                <video muted autoplay loop ng-src="{{vine}}"></video>
+        <ul class="container isotope" isotope-container="isotope-container">
+            <li class="item isotope-time" ng-repeat="vine in vines" isotope-item="isotope-item">
+                <video autoplay loop ng-src="{{vine}}"></video>
             </li>
         </ul>
         <h1>
